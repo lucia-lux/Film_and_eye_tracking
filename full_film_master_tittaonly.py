@@ -121,7 +121,6 @@ textscr.draw_text("Press any key to start the video.",fontsize=24)
 #textscr.set_background_colour = (0,0,0)
 
 # some info about the video
-#filename = "C:\\Users\\luzia.troebinger\\CortEx\\experiment_folder_python\\try_audio_ffpyplayer\\video_out.mp4"
 # paths to videos for pilot and testing:
 if pilot:
     filmname = film_pilot
@@ -242,6 +241,4 @@ df.to_csv(settings.FILENAME[:-4] + '.tsv', sep='\t')
 df_msg = pd.DataFrame(msg_data,  columns = ['system_time_stamp', 'msg'])
 df_msg.to_csv(settings.FILENAME[:-4] + '_msg.tsv', sep='\t')
 
-#old_file = os.path.join("C:\\Users\\testing\\Desktop\\luzia_testing\\film\\data", "999_TOBII_output.tsv")
-#new_file = os.path.join("C:\\Users\\testing\\Desktop\\luzia_testing\\film\\data", str(participant_id)+"TOBII_output.tsv")
-#os.rename(old_file, new_file)
+
